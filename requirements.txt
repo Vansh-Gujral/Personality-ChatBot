@@ -3,4 +3,5 @@ speechrecognition
 numpy
 requests
 streamlit-lottie
+scikit-learn
 git+https://github.com/google/generative-ai-python.git
