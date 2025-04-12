@@ -1,7 +1,6 @@
 streamlit
-google-generativeai==0.3.2
 speechrecognition
 numpy
 requests
 streamlit-lottie
-os
+git+https://github.com/google/generative-ai-python.git
