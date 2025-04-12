@@ -5,13 +5,16 @@ import google.generativeai as genai
 import speech_recognition as sr
 from streamlit_lottie import st_lottie
 import requests
+import os
 
 # =======================
 # 🔧 Setup Gemini API Key
 # =======================
 # API key directly embedded in the code
-API_KEY = "AIzaSyCBB76bgbgFQXn5mkKcM8Yn77Zkn47Nfqg"
+
+API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=API_KEY)
+
 
 # Configure the model name and system prompt
 MODEL_NAME = "gemini-1.5-pro-latest"
