@@ -12,7 +12,7 @@ import os
 # =======================
 # API key directly embedded in the code
 
-API_KEY = os.getenv("GEMINI_API_KEY")
+API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=API_KEY)
 
 
